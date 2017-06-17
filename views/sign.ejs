@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+<script src="javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/scripts.js"></script>
+<script src="javascrips/bootstrap.min.js"></script>
+
+</head>
+
+
+<body id="signInPage">
+
+<!-- - HTML FOR SIGN IN FORM STARTS HERE - -->
+<div class="container">
+
+ <header>  
+    <h1 class="title text-center">Sign In</h1>
+</header>
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+      
+        <form class="form-inline" action="/sign" method="post">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="User Name" name="user" />
+            </div> <br/>
+            <div class="input-group">
+              <input type="password" class="form-control" placeholder="*****" name="password" />
+            </div> <br/>
+            <div>
+             <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+          <div class="badlogin" style= "color:red; font-size: 25px; margin-top:10px;" >
+            <%=message%>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+<!-- - HTML FOR SIGN IN FORM ENDS HERE - -->
+
+</body>
+</html>
